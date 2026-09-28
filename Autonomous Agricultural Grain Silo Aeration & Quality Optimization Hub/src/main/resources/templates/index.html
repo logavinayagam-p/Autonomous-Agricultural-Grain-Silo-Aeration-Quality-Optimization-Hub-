@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Grain Silo Aeration & Quality Hub</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" th:href="@{/}">
+                <i class="bi bi-building me-2 text-warning"></i>
+                <span>Grain Silo Hub</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" th:classappend="${activePage == 'dashboard'} ? 'active' : ''" th:href="@{/}">
+                            <i class="bi bi-speedometer2 me-1"></i> Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:classappend="${activePage == 'silos'} ? 'active' : ''" th:href="@{/silos}">
+                            <i class="bi bi-database me-1"></i> Silos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:classappend="${activePage == 'conditions'} ? 'active' : ''" th:href="@{/conditions}">
+                            <i class="bi bi-thermometer-half me-1"></i> Conditions
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:classappend="${activePage == 'aerations'} ? 'active' : ''" th:href="@{/aerations}">
+                            <i class="bi bi-fan me-1"></i> Aeration Logs
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <main class="main-content py-4">
+        <div class="container">
+
+            <!-- Academic Prototype Notice -->
+            <div class="academic-notice mb-4 shadow-sm">
+                <div class="d-flex align-items-center">
+                    <i class="bi bi-info-circle-fill me-2 fs-5"></i>
+                    <div>
+                        <strong>Academic Project Prototype:</strong> This application is a simplified academic prototype for managing grain silos, condition readings, and aeration records. It does not physically operate fan hardware or autonomously control storage systems.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page Title -->
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <div>
+                    <h2 class="fw-bold mb-0">Overview Dashboard</h2>
+                    <p class="text-muted mb-0">Autonomous Agricultural Grain Silo Aeration & Quality Optimization Hub</p>
+                </div>
+                <div>
+                    <a th:href="@{/silos/new}" class="btn btn-primary me-2">
+                        <i class="bi bi-plus-circle me-1"></i> Add Silo
+                    </a>
+                    <a th:href="@{/conditions/new}" class="btn btn-outline-success me-2">
+                        <i class="bi bi-thermometer-sun me-1"></i> Record Condition
+                    </a>
+                    <a th:href="@{/aerations/new}" class="btn btn-outline-secondary">
+                        <i class="bi bi-fan me-1"></i> Log Aeration
+                    </a>
+                </div>
+            </div>
+
+            <!-- Key Metrics Cards -->
+            <div class="row g-4 mb-4">
+                <!-- Silos Count -->
+                <div class="col-md-4">
+                    <div class="card stat-card bg-primary text-white p-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="text-white-50 text-uppercase fw-semibold mb-1">Total Grain Silos</h6>
+                                <h2 class="fw-bold mb-0" th:text="${totalSilos}">0</h2>
+                            </div>
+                            <div class="card-icon">
+                                <i class="bi bi-database-fill"></i>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <a th:href="@{/silos}" class="text-white text-decoration-none small">
+                                View all silos <i class="bi bi-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conditions Count -->
+                <div class="col-md-4">
+                    <div class="card stat-card bg-success text-white p-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="text-white-50 text-uppercase fw-semibold mb-1">Storage Condition Logs</h6>
+                                <h2 class="fw-bold mb-0" th:text="${totalConditions}">0</h2>
+                            </div>
+                            <div class="card-icon">
+                                <i class="bi bi-thermometer-half"></i>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <a th:href="@{/conditions}" class="text-white text-decoration-none small">
+                                View monitoring history <i class="bi bi-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aeration Activities Count -->
+                <div class="col-md-4">
+                    <div class="card stat-card bg-warning text-dark p-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="text-dark-50 text-uppercase fw-semibold mb-1">Aeration Activities</h6>
+                                <h2 class="fw-bold mb-0" th:text="${totalAerations}">0</h2>
+                            </div>
+                            <div class="card-icon">
+                                <i class="bi bi-fan"></i>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <a th:href="@{/aerations}" class="text-dark text-decoration-none small fw-semibold">
+                                View aeration logs <i class="bi bi-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Silos Section -->
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-white py-3 d-flex justify-content-between align-items-center">
+                    <h5 class="fw-bold mb-0">
+                        <i class="bi bi-clock-history me-2 text-primary"></i> Recently Managed Silos
+                    </h5>
+                    <a th:href="@{/silos}" class="btn btn-sm btn-outline-primary">View All Silos</a>
+                </div>
+                <div class="card-body p-0">
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle mb-0">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Silo Name</th>
+                                    <th>Location</th>
+                                    <th>Grain Type</th>
+                                    <th>Capacity (Tons)</th>
+                                    <th>Stored (Tons)</th>
+                                    <th>Utilization</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr th:if="${#lists.isEmpty(recentSilos)}">
+                                    <td colspan="8" class="text-center py-4 text-muted">
+                                        <i class="bi bi-inbox fs-3 d-block mb-2"></i>
+                                        No silos added yet. <a th:href="@{/silos/new}">Add your first silo</a>.
+                                    </td>
+                                </tr>
+                                <tr th:each="silo : ${recentSilos}">
+                                    <td class="fw-semibold" th:text="'#' + ${silo.id}">#1</td>
+                                    <td class="fw-bold text-primary" th:text="${silo.siloName}">North Silo A1</td>
+                                    <td th:text="${silo.location}">Facility Sector 1</td>
+                                    <td>
+                                        <span class="badge bg-light text-dark border" th:text="${silo.grainType}">Wheat</span>
+                                    </td>
+                                    <td th:text="${silo.storageCapacity} + ' t'">1000 t</td>
+                                    <td th:text="${silo.storedQuantity} + ' t'">650 t</td>
+                                    <td style="min-width: 150px;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="progress flex-grow-1 me-2">
+                                                <div class="progress-bar" 
+                                                     th:classappend="${silo.utilizationPercentage > 90 ? 'bg-danger' : (silo.utilizationPercentage > 75 ? 'bg-warning' : 'bg-success')}"
+                                                     role="progressbar" 
+                                                     th:style="'width: ' + ${silo.utilizationPercentage} + '%;'">
+                                                </div>
+                                            </div>
+                                            <span class="small fw-semibold" th:text="${silo.utilizationPercentage} + '%'">65%</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="btn-group btn-group-sm">
+                                            <a th:href="@{/silos/edit/{id}(id=${silo.id})}" class="btn btn-outline-secondary" title="Edit">
+                                                <i class="bi bi-pencil"></i>
+                                            </a>
+                                            <a th:href="@{/silos/delete/{id}(id=${silo.id})}" 
+                                               class="btn btn-outline-danger" 
+                                               onclick="return confirm('Are you sure you want to delete this Silo? All associated condition and aeration records will also be safely deleted.');" 
+                                               title="Delete">
+                                                <i class="bi bi-trash"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer py-3 text-center text-muted">
+        <div class="container">
+            <small>Autonomous Agricultural Grain Silo Aeration & Quality Optimization Hub &bull; College Academic Prototype &bull; Spring Boot & MySQL</small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

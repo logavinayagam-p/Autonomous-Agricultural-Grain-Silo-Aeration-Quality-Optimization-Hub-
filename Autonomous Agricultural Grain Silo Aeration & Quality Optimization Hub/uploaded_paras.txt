@@ -1,0 +1,355 @@
+000 [style=Heading 8 align=CENTER (1)]: Sri Eshwar College of Engineering
+001 [style=Normal align=CENTER (1)]: (An Autonomous Institution – Affiliated to Anna University)
+002 [style=Normal align=CENTER (1)]: COIMBATORE – 641 202
+003 [style=Normal align=CENTER (1)]: 
+004 [style=Normal align=None]: 
+005 [style=Normal align=CENTER (1)]: BONAFIDE CERTIFICATE
+006 [style=Normal align=CENTER (1)]: 
+007 [style=Normal align=JUSTIFY (3)]: Certified that this Report titled “……………….Title of the Project……………..” is the bonafide work of 
+008 [style=Normal align=JUSTIFY (3)]: who carried out the project work under my supervision.
+009 [style=Normal align=JUSTIFY (3)]: 
+010 [style=Normal align=None]: 
+011 [style=Normal align=None]: 
+012 [style=Normal align=None]: 
+013 [style=Normal align=None]: 
+014 [style=Normal align=None]: 
+015 [style=Normal align=None]: 
+016 [style=Heading 1 align=None]: DECLARATION
+017 [style=Body Text align=None]: 
+018 [style=Heading 2 align=None]: STUDENT NAME 	[Register Number]
+019 [style=Body Text align=None]: 
+020 [style=Body Text align=None]: 
+021 [style=Body Text align=None]: 
+022 [style=Body Text align=None]: 
+023 [style=Body Text align=None]: 
+024 [style=Body Text align=None]: 
+025 [style=Body Text align=None]: 
+026 [style=Body Text align=JUSTIFY (3)]: To declare that the project entitled “PROJECT NAME” submitted in partial fulfilment to the University as the project work of Bachelor of Engineering (Computer and Communication Engineering) Degree, is a record of original work done by us under the supervision and guidance of NAME OF THE GUIDE, Assistant Professor, Department of Computer and Communication Engineering, Sri Eshwar College of Engineering, Coimbatore.
+027 [style=Body Text align=None]: 
+028 [style=Normal align=None]: Place: Coimbatore
+029 [style=Heading 2 align=None]: Date:
+030 [style=Body Text align=None]: [STUDENT NAME]
+031 [style=Body Text align=None]: 
+032 [style=Body Text align=None]: 
+033 [style=Body Text align=None]: 
+034 [style=Body Text align=None]: 
+035 [style=Body Text align=None]: 
+036 [style=Body Text align=None]: 
+037 [style=Body Text align=None]: 
+038 [style=Body Text align=None]: 
+039 [style=Body Text align=None]: 
+040 [style=Body Text align=None]: 
+041 [style=Body Text align=None]: 
+042 [style=Body Text align=None]: 
+043 [style=Body Text align=None]: Project Guided by,
+044 [style=Body Text align=None]: 
+045 [style=Body Text align=None]: 
+046 [style=Body Text align=None]: [NAME OF THE GUIDE, AP/CCE]
+047 [style=Normal align=None]: 
+048 [style=Body Text align=None]: 
+049 [style=Body Text align=None]: 
+050 [style=Heading 2 align=None]: ACKNOWLEDGEMENT
+051 [style=Body Text align=None]: 
+052 [style=Body Text align=JUSTIFY (3)]: The success of a work depends on a team and cooperation. I take this opportunity to express my gratitude and thanks to everyone who helped me in my project. I would like to thank the management for the constant support provided by them to complete this project.
+053 [style=Body Text align=JUSTIFY (3)]: It is indeed our great honor bounded duty to thank our beloved Chairman Mr. R. Mohanram, for his academic interest shown towards the students.
+054 [style=Normal align=JUSTIFY (3)]: We are indebted to our Director Mr. R. Rajaram, for motivating and providing us with all facilities.
+055 [style=Body Text align=JUSTIFY (3)]: I wish to express my sincere regards and deep sense of gratitude to Dr. Sudha Mohanram, M.E, Ph.D. Principal, for the excellent facilities and encouragement provided during the course of the study and project.
+056 [style=Body Text align=JUSTIFY (3)]: We are indebted to Dr. C. Vivek, M.E., Ph.D. Head of Computer and Communication Engineering Department for having permitted us to carry out this project and giving the complete freedom to utilize the resources of the department.
+057 [style=Body Text align=JUSTIFY (3)]: I express my sincere thanks to my mini project Coordinator NAME OF THE GUIDE, Assistant Professors of Computer and Communication Engineering Department for the valuable guidance and encouragement given, to us for this project.
+058 [style=Body Text align=JUSTIFY (3)]: I solemnly express our thanks to all the teaching and nonteaching staff of the Computer and Communication Engineering Department, family and friends for their valuable support which inspired us to work on this project.
+059 [style=Normal align=None]: 
+060 [style=Normal align=JUSTIFY (3)]: 
+061 [style=Heading 2 align=None]: TABLE OF CONTENT
+062 [style=Body Text align=None]: 
+063 [style=toc 1 align=None]: 
+064 [style=List Paragraph align=None]: Below are the sample contents for text formatting. Update the project content as per the contents given in table of contents
+065 [style=Heading 2 align=RIGHT (2)]: ABSTRACT
+066 [style=Body Text align=None]: 
+067 [style=Body Text align=None]: 
+068 [style=Body Text align=JUSTIFY (3)]: 
+069 [style=Normal align=JUSTIFY (3)]: This paper presents the design and implementation of a PROJECT NAME using Spring Boot, a powerful Java framework for building enterprise applications. The application includes robust user authentication features, including secure login and logout, powered by Spring Security. It facilitates CRUD (Create, Read, Update, Delete) operations for efficient expense management, allowing users to seamlessly add, update, or delete their financial data without administrative intervention. A key feature is its ability to generate comprehensive financial summaries with a single click, leveraging Spring Data JPA and MySQL to ensure data security and integrity. The user interface uses HTML,CSS and JavaScript to provide a clean, intuitive experience for managing and reviewing personal expenses.
+070 [style=Normal align=None]: 
+071 [style=Body Text align=None]: 
+072 [style=Body Text align=None]: 
+073 [style=Body Text align=None]: 
+074 [style=Heading 2 align=RIGHT (2)]: INTRODUCTION
+075 [style=Body Text align=None]: 
+076 [style=Body Text align=None]: 
+077 [style=Normal align=None]:         1.1 OBJECTIVE
+078 [style=Body Text align=None]: 
+079 [style=Normal align=JUSTIFY (3)]: The Spring Boot-based PROJECT NAME aims to develop a sophisticated web application for effective personal financial management. It prioritizes robust security with advanced user authentication mechanisms using Spring Security to protect sensitive financial data. Users can effortlessly manage expenses through seamless CRUD operations and gain actionable insights from automated financial summaries and reports.
+080 [style=Normal align=JUSTIFY (3)]: 
+081 [style=Normal align=JUSTIFY (3)]: Built with HTML, CSS, and JavaScript templates, the application provides an intuitive, visually engaging user interface. It emphasizes usability, accessibility, and engagement through interactive data visualization and streamlined navigation. Stringent data integrity and privacy standards are maintained with Spring Boot's security features and MySQL database, including encrypted data storage and protection against vulnerabilities.
+082 [style=Normal align=JUSTIFY (3)]: 
+083 [style=Normal align=JUSTIFY (3)]: Ultimately, this project empowers users with a powerful tool for maintaining financial discipline, making informed decisions, and gaining confidence in managing their personal finances effectively.
+084 [style=Body Text align=None]: 
+085 [style=Body Text align=None]: 
+086 [style=Heading 2 align=None]: SYSTEM ANALYSIS AND DESIGN
+087 [style=Body Text align=None]: 
+088 [style=List Paragraph align=None]: EXISTING SCENARIO
+089 [style=Body Text align=None]: 
+090 [style=Body Text align=JUSTIFY (3)]: In the current digital landscape, numerous platforms and applications facilitate personal finance management, each offering a variety of features to enhance the user experience. Major players in this field include services like Mint, YNAB (You Need A Budget), and Personal Capital, which provide comprehensive tools for budgeting, expense tracking, and financial planning. These platforms offer sophisticated analytics, automatic transaction categorization, and integration with bank accounts to provide real-time financial insights. Despite their popularity, these services often come with limitations such as subscription costs, limited customization, and privacy concerns due to sensitive financial data being managed by third-party services.
+091 [style=Body Text align=JUSTIFY (3)]: 
+092 [style=Body Text align=JUSTIFY (3)]: For individuals and smaller entities who wish to manage their finances with greater control and customization, these mainstream solutions may not be ideal. The need arises for customizable, self-hosted finance trackers that offer comprehensive financial management without the dependencies and constraints of commercial platforms. This gap in the market is where Java-based solutions like the PROJECT NAME come into play, providing users with the flexibility to track, manage, and analyze their financial data independently. By leveraging open-source technologies and frameworks, such as Spring Boot and MySQL, these custom solutions empower users to create personalized finance management systems that align with their specific requirements and preferences.
+093 [style=Body Text align=JUSTIFY (3)]: 
+094 [style=Body Text align=None]: 
+095 [style=Body Text align=None]: 
+096 [style=Heading 2 align=None]: PROBLEM STATEMENT
+097 [style=Body Text align=None]: 
+098 [style=Body Text align=JUSTIFY (3)]: The Spring Boot-based PROJECT NAME revolutionizes personal financial management with a robust and user-friendly web application. It ensures secure user authentication using Spring Security's advanced mechanisms, safeguarding sensitive financial data. Users can manage expenses effortlessly with CRUD operations to create, view, update, and delete records.
+099 [style=Body Text align=JUSTIFY (3)]: The application generates automated financial summaries and insightful reports from entered expenses, providing clear visibility into spending patterns, budget adherence, and overall financial health through interactive data visualization. Built with Thymeleaf and Bootstrap, its responsive design ensures usability across devices, with an intuitive interface for seamless navigation.
+100 [style=Body Text align=JUSTIFY (3)]: Spring Boot's security features and a MySQL database maintain data integrity and privacy, ensuring encrypted storage and protection against vulnerabilities. This comprehensive tool empowers users with actionable insights for effective financial oversight and decision-making.
+101 [style=Body Text align=None]: 
+102 [style=Body Text align=None]: 
+103 [style=Body Text align=None]: 
+104 [style=Body Text align=None]: 
+105 [style=Heading 2 align=None]: PROPOSED SOLUTION
+106 [style=Body Text align=None]: 
+107 [style=Body Text align=None]: 
+108 [style=List Paragraph align=LEFT (0)]: OVERVIEW
+109 [style=Body Text align=None]: 
+110 [style=Body Text align=JUSTIFY (3)]: The Spring Boot-based PROJECT NAME transforms personal financial management with its robust features and user-friendly interface. It leverages Spring Boot's powerful framework and Spring Security for secure authentication, ensuring users' financial data remains protected.
+111 [style=Body Text align=JUSTIFY (3)]: Users can efficiently manage expenses through intuitive CRUD operations: adding, viewing, updating, and deleting expense records. Detailed summaries and insightful reports offer comprehensive overviews of spending patterns, budget adherence, and overall financial health, presented via interactive charts and graphs.
+112 [style=Body Text align=JUSTIFY (3)]: Built with Thymeleaf and Bootstrap, the application ensures responsiveness across devices, enhancing usability for managing finances on the go. Data privacy is paramount, employing industry best practices with MySQL for encryption, storage, and protection against vulnerabilities.
+113 [style=Body Text align=JUSTIFY (3)]: The interface is designed for seamless navigation and user engagement, facilitating informed decision-making and promoting financial stability. By empowering individuals to streamline financial processes and achieve their goals confidently, this application serves as a valuable tool for personal financial management.
+114 [style=Body Text align=None]: 
+115 [style=Body Text align=None]: 
+116 [style=Body Text align=None]: 
+117 [style=Body Text align=None]: 
+118 [style=Body Text align=None]: 
+119 [style=Body Text align=None]: 
+120 [style=Body Text align=None]: 
+121 [style=Body Text align=None]: 
+122 [style=Body Text align=None]: 
+123 [style=Heading 2 align=LEFT (0)]: FLOW CHART
+124 [style=Body Text align=None]: 
+125 [style=Body Text align=None]: 
+126 [style=Body Text align=None]: 
+127 [style=Body Text align=None]: 
+128 [style=Body Text align=None]: 
+129 [style=Body Text align=None]: 
+130 [style=Normal align=None]: 
+131 [style=Body Text align=None]: 
+132 [style=Normal align=None]: IMPLEMENTATION AND RESULT
+133 [style=Body Text align=None]: 
+134 [style=Body Text align=None]: 
+135 [style=Heading 2 align=None]: CODE
+136 [style=Body Text align=None]: 
+137 [style=Normal align=None]: CONTROLLER (ExpenseController.java)
+138 [style=Body Text align=None]: 
+139 [style=Body Text align=None]: 		package com.expense.controller;
+140 [style=Body Text align=None]: 
+141 [style=Body Text align=None]: import org.springframework.beans.factory.annotation.Autowired;
+142 [style=Body Text align=None]: import org.springframework.stereotype.Controller;
+143 [style=Body Text align=None]: import org.springframework.ui.Model;
+144 [style=Body Text align=None]: import org.springframework.web.bind.annotation.*;
+145 [style=Body Text align=None]: import com.expense.model.Expense;
+146 [style=Body Text align=None]: import com.expense.service.ExpenseService;
+147 [style=Body Text align=None]: import java.util.List;
+148 [style=Body Text align=None]: 
+149 [style=Body Text align=None]: @Controller
+150 [style=Body Text align=None]: public class ExpenseController {
+151 [style=Body Text align=None]: 
+152 [style=Body Text align=None]:     @Autowired
+153 [style=Body Text align=None]:     private ExpenseService expenseService;
+154 [style=Body Text align=None]: 
+155 [style=Body Text align=None]:     // List all expenses + total
+156 [style=Body Text align=None]:     @GetMapping("/")
+157 [style=Body Text align=None]:     public String listExpenses(Model model) {
+158 [style=Body Text align=None]:         List<Expense> expenses = expenseService.findAll();
+159 [style=Body Text align=None]:         double total = expenses.stream().mapToDouble(Expense::getPrice).sum();
+160 [style=Body Text align=None]:         model.addAttribute("expenses", expenses);
+161 [style=Body Text align=None]:         model.addAttribute("totalSum", total);
+162 [style=Body Text align=None]:         return "expenses";
+163 [style=Body Text align=None]:     }
+164 [style=Body Text align=None]: 
+165 [style=Body Text align=None]:     // Add new expense
+166 [style=Body Text align=None]:     @PostMapping("/")
+167 [style=Body Text align=None]:     public String addExpense(@ModelAttribute Expense expense) {
+168 [style=Body Text align=None]:         expenseService.save(expense);
+169 [style=Body Text align=None]:         return "redirect:/";
+170 [style=Body Text align=None]:     }
+171 [style=Body Text align=None]: 
+172 [style=Body Text align=None]:     // Show update form
+173 [style=Body Text align=None]:     @GetMapping("/update/{id}")
+174 [style=Body Text align=None]:     public String showUpdateForm(@PathVariable Long id, Model model) {
+175 [style=Body Text align=None]:         model.addAttribute("expense", expenseService.findById(id));
+176 [style=Body Text align=None]:         return "update_expense";
+177 [style=Body Text align=None]:     }
+178 [style=Body Text align=None]: 
+179 [style=Body Text align=None]:     // Update expense
+180 [style=Body Text align=None]:     @PostMapping("/update/{id}")
+181 [style=Body Text align=None]:     public String updateExpense(@PathVariable Long id, @ModelAttribute Expense expense) {
+182 [style=Body Text align=None]:         expense.setId(id);
+183 [style=Body Text align=None]:         expenseService.save(expense);
+184 [style=Body Text align=None]:         return "redirect:/";
+185 [style=Body Text align=None]:     }
+186 [style=Body Text align=None]: 
+187 [style=Body Text align=None]:     // Delete expense
+188 [style=Body Text align=None]:     @GetMapping("/delete/{id}")
+189 [style=Body Text align=None]:     public String deleteExpense(@PathVariable Long id) {
+190 [style=Body Text align=None]:         expenseService.deleteById(id);
+191 [style=Body Text align=None]:         return "redirect:/";
+192 [style=Body Text align=None]:     }
+193 [style=Body Text align=None]: }
+194 [style=Body Text align=None]: 
+195 [style=Heading 2 align=None]: APPLICATION CONFIG (application.properties)
+196 [style=Body Text align=None]: 
+197 [style=Body Text align=None]: # Server
+198 [style=Body Text align=None]: server.port=8080
+199 [style=Body Text align=None]: 
+200 [style=Body Text align=None]: # MySQL Database
+201 [style=Body Text align=None]: spring.datasource.url=jdbc:mysql://localhost:3306/expense_db
+202 [style=Body Text align=None]: spring.datasource.username=root
+203 [style=Body Text align=None]: spring.datasource.password=yourpassword
+204 [style=Body Text align=None]: spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+205 [style=Body Text align=None]: 
+206 [style=Body Text align=None]: # JPA / Hibernate
+207 [style=Body Text align=None]: spring.jpa.hibernate.ddl-auto=update
+208 [style=Body Text align=None]: spring.jpa.show-sql=true
+209 [style=Body Text align=None]: spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+210 [style=Body Text align=None]: 
+211 [style=Body Text align=None]: # Thymeleaf
+212 [style=Body Text align=None]: spring.thymeleaf.cache=false 
+213 [style=Body Text align=None]: 
+214 [style=Heading 2 align=None]: ENTITY (Expense.java)
+215 [style=Body Text align=None]: 
+216 [style=Body Text align=None]: package com.expense.model;
+217 [style=Body Text align=None]: 
+218 [style=Body Text align=None]: import jakarta.persistence.*;
+219 [style=Body Text align=None]: 
+220 [style=Body Text align=None]: @Entity
+221 [style=Body Text align=None]: @Table(name = "expenses")
+222 [style=Body Text align=None]: public class Expense {
+223 [style=Body Text align=None]: 
+224 [style=Body Text align=None]:     @Id
+225 [style=Body Text align=None]:     @GeneratedValue(strategy = GenerationType.IDENTITY)
+226 [style=Body Text align=None]:     private Long id;
+227 [style=Body Text align=None]: 
+228 [style=Body Text align=None]:     private String name;
+229 [style=Body Text align=None]:     private double price;
+230 [style=Body Text align=None]:     private double salary;
+231 [style=Body Text align=None]: 
+232 [style=Body Text align=None]:     // Getters and Setters
+233 [style=Body Text align=None]:     public Long getId() { return id; }
+234 [style=Body Text align=None]:     public void setId(Long id) { this.id = id; }
+235 [style=Body Text align=None]: 
+236 [style=Body Text align=None]:     public String getName() { return name; }
+237 [style=Body Text align=None]:     public void setName(String name) { this.name = name; }
+238 [style=Body Text align=None]: 
+239 [style=Body Text align=None]:     public double getPrice() { return price; }
+240 [style=Body Text align=None]:     public void setPrice(double price) { this.price = price; }
+241 [style=Body Text align=None]: 
+242 [style=Body Text align=None]:     public double getSalary() { return salary; }
+243 [style=Body Text align=None]:     public void setSalary(double salary) { this.salary = salary; }
+244 [style=Body Text align=None]: }
+245 [style=Body Text align=None]: 
+246 [style=Heading 2 align=None]: INDEX.HTML
+247 [style=Heading 2 align=None]: 
+248 [style=Body Text align=None]: <!DOCTYPE html>
+249 [style=Body Text align=None]: <html lang="en" xmlns:th="http://www.thymeleaf.org">
+250 [style=Body Text align=None]: <head>
+251 [style=Body Text align=None]:     <meta charset="UTF-8">
+252 [style=Body Text align=None]:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+253 [style=Body Text align=None]:     <title>Login</title>
+254 [style=Body Text align=None]:     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+255 [style=Body Text align=None]: </head>
+256 [style=Body Text align=None]: <body>
+257 [style=Body Text align=None]: <div class="container mt-5">
+258 [style=Body Text align=None]:     <div class="row justify-content-center">
+259 [style=Body Text align=None]:         <div class="col-md-4">
+260 [style=Body Text align=None]:             <div class="card p-4">
+261 [style=Body Text align=None]:                 <h4 class="text-center mb-3">Login</h4>
+262 [style=Body Text align=None]:                 <form th:action="@{/login}" method="post">
+263 [style=Body Text align=None]:                     <div class="mb-3">
+264 [style=Body Text align=None]:                         <input type="text" class="form-control" name="username" placeholder="Username" required>
+265 [style=Body Text align=None]:                     </div>
+266 [style=Body Text align=None]:                     <div class="mb-3">
+267 [style=Body Text align=None]:                         <input type="password" class="form-control" name="password" placeholder="Password" required>
+268 [style=Body Text align=None]:                     </div>
+269 [style=Body Text align=None]:                     <button type="submit" class="btn btn-primary w-100">Login</button>
+270 [style=Body Text align=None]:                 </form>
+271 [style=Body Text align=None]:                 <p class="mt-3 text-center">
+272 [style=Body Text align=None]:                     Don't have an account? <a th:href="@{/register}">Create Account</a>
+273 [style=Body Text align=None]:                 </p>
+274 [style=Body Text align=None]:             </div>
+275 [style=Body Text align=None]:         </div>
+276 [style=Body Text align=None]:     </div>
+277 [style=Body Text align=None]: </div>
+278 [style=Body Text align=None]: </body>
+279 [style=Body Text align=None]: </html>
+280 [style=Body Text align=None]: 
+281 [style=Heading 2 align=None]: PDF.HTML
+282 [style=Body Text align=None]: <!DOCTYPE html>
+283 [style=Body Text align=None]: <html lang="en" xmlns:th="http://www.thymeleaf.org">
+284 [style=Body Text align=None]: <head>
+285 [style=Body Text align=None]:     <meta charset="UTF-8">
+286 [style=Body Text align=None]:     <title>Finance Record</title>
+287 [style=Body Text align=None]:     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+288 [style=Body Text align=None]: </head>
+289 [style=Body Text align=None]: <body>
+290 [style=Body Text align=None]: <div class="container mt-5">
+291 [style=Body Text align=None]:     <div class="text-center mb-4">
+292 [style=Body Text align=None]:         <h3 th:text="${username} + ', Your Finance Record'"></h3>
+293 [style=Body Text align=None]:     </div>
+294 [style=Body Text align=None]: 
+295 [style=Body Text align=None]:     <table class="table table-bordered">
+296 [style=Body Text align=None]:         <thead>
+297 [style=Body Text align=None]:             <tr>
+298 [style=Body Text align=None]:                 <th>Expense Reason</th>
+299 [style=Body Text align=None]:                 <th>Amount</th>
+300 [style=Body Text align=None]:             </tr>
+301 [style=Body Text align=None]:         </thead>
+302 [style=Body Text align=None]:         <tbody>
+303 [style=Body Text align=None]:             <tr th:each="expense : ${expenses}">
+304 [style=Body Text align=None]:                 <td th:text="${expense.name}"></td>
+305 [style=Body Text align=None]:                 <td th:text="'₹' + ${expense.price}"></td>
+306 [style=Body Text align=None]:             </tr>
+307 [style=Body Text align=None]:         </tbody>
+308 [style=Body Text align=None]:     </table>
+309 [style=Body Text align=None]: 
+310 [style=Body Text align=None]:     <h5 class="mt-3">Total Expenses: ₹<span th:text="${totalSum}"></span></h5>
+311 [style=Body Text align=None]:     <p class="mt-2">Dear <span th:text="${username}"></span>, Your total expenses are ₹<span th:text="${totalSum}"></span>.</p>
+312 [style=Body Text align=None]: </div>
+313 [style=Body Text align=None]: </body>
+314 [style=Body Text align=None]: </html>
+315 [style=Body Text align=None]: 
+316 [style=Heading 2 align=None]: OUTPUT
+317 [style=Body Text align=None]: 
+318 [style=Body Text align=None]: 
+319 [style=Body Text align=None]: 
+320 [style=Normal align=None]: 
+321 [style=Body Text align=None]: 
+322 [style=Body Text align=None]: 
+323 [style=Body Text align=None]: 
+324 [style=Body Text align=None]: 
+325 [style=Body Text align=None]: 
+326 [style=Normal align=RIGHT (2)]: CONCLUSION
+327 [style=Body Text align=None]: 
+328 [style=Normal align=JUSTIFY (3)]: The PROJECT NAME built with Spring Boot represents a robust solution for individuals seeking efficient management of their finances. By leveraging Spring Boot's framework and MySQL, the application integrates essential features such as user authentication via Spring Security, CRUD operations for expense handling, and dynamic generation of financial summaries. The project begins with a structured setup, configuring Spring Security to secure user interactions. CRUD functionalities enable users to effortlessly add, update, and delete expenses directly through the application interface, promoting streamlined expense management. Additionally, the implementation includes a search feature, allowing users to filter expenses based on specific criteria, enhancing usability.
+329 [style=Normal align=JUSTIFY (3)]: For financial oversight, the application calculates and displays the total sum of expenses entered by the user, facilitating quick insights into expenditure patterns. The PDF generation feature offers users the ability to generate comprehensive financial overviews with personalized details, empowering them to track their financial health effectively. The frontend design prioritizes user experience, utilizing Thymeleaf and Bootstrap for a visually appealing and responsive interface. Forms for expense entry and interactive buttons for actions like viewing total expenses and logging out ensure intuitive navigation and usability.
+330 [style=Normal align=JUSTIFY (3)]: Overall, the PROJECT NAME exemplifies a practical application of Spring Boot's capabilities in web development, providing a secure, user-friendly platform for managing personal finances efficiently with MySQL. It is well-suited for individuals seeking a reliable tool for expense tracking and financial management, demonstrating adaptability for future enhancements.
+331 [style=Heading 2 align=RIGHT (2)]: REFERENCE
+332 [style=Body Text align=None]: 
+333 [style=Body Text align=None]: 
+334 [style=List Paragraph align=None]: Spring Team. (2024). Spring Boot Reference Documentation. Retrieved from https://docs.spring.io/spring-boot/docs/current/reference/html/
+335 [style=List Paragraph align=None]: Spring Team. (2024). Spring Security Reference. Retrieved from https://docs.spring.io/spring-security/reference/
+336 [style=List Paragraph align=None]: Spring Data Team. (2024). Spring Data JPA - Reference Documentation. Retrieved from https://docs.spring.io/spring-data/jpa/docs/current/reference/html/
+337 [style=List Paragraph align=None]: Oracle. (2024). MySQL Connector/J Developer Guide. Retrieved from https://dev.mysql.com/doc/connector-j/en/
+338 [style=List Paragraph align=None]: Baeldung. (2024). Spring Boot Tutorial. Retrieved from https://www.baeldung.com/spring-boot
+339 [style=Normal align=CENTER (1)]: 
+340 [style=Normal align=None]: 
+341 [style=Normal align=None]: POs & PSOs Mapping (Put a tick mark in the mapped PO’s & PSO’s):
+342 [style=Normal align=None]: 
+343 [style=Normal align=RIGHT (2)]: 
+344 [style=Normal align=RIGHT (2)]: Signature of the Supervisor
+345 [style=Normal align=RIGHT (2)]: (Name of the Supervisor)
+346 [style=Normal align=CENTER (1)]: 
+347 [style=Normal align=CENTER (1)]: VENUE AND EXPENDITURE STATEMENT FOR THE PROJECT WORK
+348 [style=Normal align=CENTER (1)]: Details of the Component and Expenditure
+349 [style=Normal align=None]: 
+350 [style=Normal align=None]: (*Include any other charges, which includes fabrication cost and others)
+351 [style=Normal align=RIGHT (2)]: 
+352 [style=Normal align=RIGHT (2)]: 
+353 [style=Normal align=CENTER (1)]: Signature of the student							           Signature of the Supervisor
+354 [style=Normal align=CENTER (1)]: (Name of the Student)							              (Name of the Supervisor)

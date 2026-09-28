@@ -1,0 +1,14 @@
+com\grainsilo\hub\service\AerationService.class
+com\grainsilo\hub\GrainSiloApplication.class
+com\grainsilo\hub\repository\StorageConditionRepository.class
+com\grainsilo\hub\controller\SiloController.class
+com\grainsilo\hub\service\SiloService.class
+com\grainsilo\hub\service\StorageConditionService.class
+com\grainsilo\hub\controller\StorageConditionController.class
+com\grainsilo\hub\entity\Aeration.class
+com\grainsilo\hub\controller\DashboardController.class
+com\grainsilo\hub\entity\StorageCondition.class
+com\grainsilo\hub\controller\AerationController.class
+com\grainsilo\hub\entity\Silo.class
+com\grainsilo\hub\repository\AerationRepository.class
+com\grainsilo\hub\repository\SiloRepository.class
